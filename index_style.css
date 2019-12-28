@@ -61,8 +61,11 @@ h4 {
 }
 
 .contact {
-	justify-content: space-around;
-	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0px;
+	height: 20vh;
 }
 
 .contact div a {
@@ -78,6 +81,30 @@ h4 {
 .animate-fade-in {
 	animation-name: fadeIn;
 	animation-duration: 2s;
+}
+
+@media screen and (max-width: 640px) {
+	.about {
+		padding: 100px 20px 0px;
+		height: auto;
+	}
+	.contact {
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	.navigation-links a:hover {
+		transform: none;
+	}
+	.about {
+		padding: 100px 20px 0px;
+		height: auto;
+	}
+	.contact {
+		height: 20vh;
+	}
 }
 
 @keyframes fadeIn {
