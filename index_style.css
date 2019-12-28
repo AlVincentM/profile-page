@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Anton|Archivo+Black|Lobster|Ma+Shan+Zheng&display=swap');
+
+body, h4 {
+	font-family: 'Acme', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h4 {
+	color: white;
+}
+
+.navigation-links a{
+	transition: transform .1s;
+}
+
+.navigation-links a:hover {
+	color: white;
+	transform: scale(1.5);
+}
+
+.intro {
+	height: 100vh;
+	background: url("./img/background.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.intro-text-container {
+	height: 100%;
+}
+
+.intro-text {
+	color: white;
+	font-weight: 500;
+	font-size: 60px;
+}
+
+.intro-text-2 {
+	font-size: 18px;
+}
+
+.mask {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about {
+	height: 100vh;
+	padding: 100px 100px 0px;
+}
+
+.about-text {
+}
+
+.contact {
+	justify-content: space-around;
+	height: 30vh;
+}
+
+.contact div a {
+	margin: 0px 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.contact p {
+	color: white;
+}
+
+.animate-fade-in {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
